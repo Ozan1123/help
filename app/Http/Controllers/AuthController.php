@@ -10,11 +10,10 @@ use App\Models\User;
 class AuthController extends Controller
 {
     // 👉 Tampilkan halaman login
-    public function showLogin()
+        public function showLogin()
     {
-        return view('login');
+        return view('auth.login'); // BUKAN 'login'
     }
-
     // 👉 Proses login
     public function login(Request $request)
     {
@@ -34,9 +33,9 @@ class AuthController extends Controller
     }
 
     // 👉 Tampilkan halaman register
-    public function showRegister()
+        public function showRegister()
     {
-        return view('register');
+        return view('auth.register'); // BUKAN 'register'
     }
 
     // 👉 Proses register

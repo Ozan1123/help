@@ -9,13 +9,13 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
+        public function up(): void
     {
-        Schema::create('books', function (Blueprint $table) {
+        Schema::create('articles', function (Blueprint $table) {
             $table->id();
-            $table->string('title');     // Judul buku
-            $table->string('author');    // Penulis
-            $table->string('cover')->nullable(); // Cover (opsional)
+            $table->string('title');
+            $table->string('author');
+            $table->string('cover')->nullable();
             $table->timestamps();
         });
     }
